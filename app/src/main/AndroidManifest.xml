@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.ideansoft.com.mdjplayer">
+
+       <uses-permission android:name="android.permission.INTERNET" />
+       <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+       <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+       <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+       <!--절전모드 권한 필요-->
+       <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+       <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_upgrade"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="app.ideansoft.com.mdjplayer.activity.IntroActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity android:name="app.ideansoft.com.mdjplayer.activity.DownloadActivity">
+
+
+        </activity>
+        <activity android:name="app.ideansoft.com.mdjplayer.activity.AlarmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name="app.ideansoft.com.mdjplayer.activity.YoutubeActivity"
+            android:supportsRtl="true"
+            android:hardwareAccelerated="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+
+        </activity>
+
+        <receiver android:name="app.ideansoft.com.mdjplayer.receiver.Alarm_Receiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.sec" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

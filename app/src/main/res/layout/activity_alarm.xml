@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="편히 주무세요! 깨워 드릴게요"-->
+        <!--android:textSize="30sp"-->
+        <!--android:layout_marginBottom="10dp"/>-->
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_alarmbar"
+            android:layout_centerVertical="true"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_start"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_finish"
+            android:text="@string/btn_finish" />
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_start"
+            android:text="@string/btn_start"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:timePickerMode="spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <!--<string name="app_name">MPlayer</string>-->
+    <string name="app_name">모두 잠든 후에</string>
+    <string name="help">help</string>
+    <string name="exit">exit</string>
+
+    <string name="google_api_key">AIzaSyDSLeTCndmu6mC_q5CsYdxIBziRzeSNQu4</string>
+    <string name="downloadLink">http://www.ideansoft.com/URL_List.xls</string>
+    <string name="downloadFileName">URL_List.xls</string>
+    <string name="btn_finish">취소</string>
+    <string name="btn_start">저장</string>
+    <string name="txt_alarmbar">알람설정</string>
+
+</resources>
